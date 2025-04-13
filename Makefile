@@ -1,14 +1,14 @@
-CC=gcc
-TARGET=srtf
-SRC=strf_process_sched.c
+CC = gcc
+CFLAGS = -Wall -g
+TARGET = srtf_process_sched
 
 all: $(TARGET)
 
-$(TARGET): $(SRC)
-	$(CC) $(SRC) -o $(TARGET)
+$(TARGET): main.c srtf_process_sched.c
+	$(CC) $(CFLAGS) -o $(TARGET) main.c srtf_process_sched.c
 
-run: $(TARGET)
-	./$(TARGET) input.txt
+run: all
+	./$(TARGET)
 
 clean:
 	rm -f $(TARGET)
