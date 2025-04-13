@@ -3,7 +3,7 @@
 
 int main() {
     int context_switch_time;
-    //Process* processes = NULL;
+    Process* processes = NULL;
     int num_processes = 0;
 
     read_input_file("input.txt", &context_switch_time, &processes, &num_processes);
