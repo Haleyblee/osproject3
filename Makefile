@@ -1,6 +1,6 @@
 CC=gcc
 TARGET=srtf
-SRC=STRF.c
+SRC=strf_process_sched.c
 
 all: $(TARGET)
 
