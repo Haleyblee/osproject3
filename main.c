@@ -1,5 +1,6 @@
 #include "srtf_process_sched.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 int main() {
     int context_switch_time;
